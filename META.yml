@@ -1,0 +1,30 @@
+---
+abstract: 'Make your html more iPhone friendly'
+author:
+  - 'Patrick Donelan <pat@patspam.com>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.94'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Plack-Middleware-iPhone
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  Digest::MD5: 0
+  File::Slurp: 0
+  HTML::DOM: 0
+  HTML::Tidy: 0
+  Plack: 0
+  autodie: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
