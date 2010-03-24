@@ -1,0 +1,37 @@
+{
+   "resources" : {
+      "repository" : "http://github.com/pdonelan/Plack-Middleware-iPhone"
+   },
+   "generated_by" : "Dist::Zilla version 1.100711",
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "version" : "1.100830",
+   "name" : "Plack-Middleware-iPhone",
+   "author" : [
+      "Patrick Donelan <pat@patspam.com>"
+   ],
+   "license" : "perl",
+   "build_requires" : {},
+   "requires" : {
+      "parent" : "0",
+      "HTML::Tidy" : "0",
+      "Plack::Util::Accessor" : "0",
+      "HTTP::Request::Common" : "0",
+      "Test::More" : "0",
+      "Plack::Middleware" : "0",
+      "Plack::Test" : "0",
+      "File::Find" : "0",
+      "File::Temp" : "0",
+      "Digest::MD5" : "0",
+      "Plack::Builder" : "0",
+      "HTML::DOM" : "0",
+      "File::Slurp" : "0"
+   },
+   "abstract" : "Make your html more iPhone friendly",
+   "configure_requires" : {
+      "ExtUtils::MakeMaker" : "6.11"
+   }
+}
+

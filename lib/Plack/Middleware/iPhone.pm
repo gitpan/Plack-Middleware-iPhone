@@ -1,11 +1,19 @@
+# 
+# This file is part of Plack-Middleware-iPhone
+# 
+# This software is copyright (c) 2010 by Patrick Donelan.
+# 
+# This is free software; you can redistribute it and/or modify it under
+# the same terms as the Perl 5 programming language system itself.
+# 
 package Plack::Middleware::iPhone;
+our $VERSION = '1.100830';
+# ABSTRACT: Make your html more iPhone friendly
 
 use warnings;
 use strict;
 use parent qw( Plack::Middleware );
 use Plack::Util::Accessor qw( manifest icon startup_image tidy viewport statusbar );
-
-our $VERSION = '0.02';
 
 sub new {
     my $class = shift;
@@ -122,11 +130,17 @@ sub write_manifest {
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 Plack::Middleware::iPhone - Make your html more iPhone friendly
+
+=head1 VERSION
+
+version 1.100830
 
 =head1 SYNOPSIS
 
@@ -158,23 +172,19 @@ This is a borderline ACME movile. For real
 L<HTML5|http://www.quirksmode.org/blog/archives/2010/03/html5_apps.html>
 mobile web apps you should be writing the HTML yourself.
 
-=head1 SEE ALSO
+=head1 ATTRIBUTES
 
-L<Building iPhone Apps with HTML, CSS, and JavaScript|http://building-iphone-apps.labs.oreilly.com>, Jonathan Stark (freely available).
-
-=head2 OPTIONS
-
-=head3 icon
+=head2 icon
 
 A 57x57 image icon that the iPhone will display as a shortcut to your app if you add it to your Home Screen
 via the "Add to Home Screen" function.
 
-=head3 startup_image
+=head2 startup_image
 
 A 320x460 PNG image that is displayed while your app is loading. If this is not set, the iPhone automatically
 uses a screenshot of the most recent app state.
 
-=head3 statusbar
+=head2 statusbar
 
 Sets the C<apple-mobile-web-app-status-bar-style> meta tag, which controls the status bar appearance when yourself
 app is launched from a Home icon shortcut.
@@ -197,7 +207,7 @@ black-translucent
 
 =back
 
-=head3 viewport
+=head2 viewport
 
 Sets the viewport meta tag, which determines how wide your iPhone thinks the screen is and scaling options. 
 
@@ -205,31 +215,36 @@ See
 L<Configuring the Viewport|http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html>
 for more information.
 
-=head3 manifest
+=head2 manifest
 
 Automatically generates a manifest file for your application (with whatever name you pass in), and sets the 
 C<manifest> attribute on the html root tag, which triggers your iPhone to start using offline HTML Web App caching.
 
 See L<Going Offline|http://building-iphone-apps.labs.oreilly.com/ch06.html> for more information
 
-=head3 tidy 
+=head2 tidy 
 
 Run the HTML through HTML::Tidy
 
+=head1 SEE ALSO
+
+L<Building iPhone Apps with HTML, CSS, and JavaScript|http://building-iphone-apps.labs.oreilly.com>, Jonathan Stark (freely available).
+
 =head1 AUTHOR
 
-Patrick Donelan, C<< <pat at patspam.com> >>
+  Patrick Donelan <pat@patspam.com>
 
-=head1 LICENSE AND COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
-Copyright 2010 Patrick Donelan.
+This software is copyright (c) 2010 by Patrick Donelan.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+
 
 1;
