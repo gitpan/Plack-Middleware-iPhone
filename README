@@ -2,7 +2,7 @@ NAME
     Plack::Middleware::iPhone - Make your html more iPhone friendly
 
 VERSION
-    version 1.100830
+    version 1.101110
 
 SYNOPSIS
       # iPhone compatible directory listing..
@@ -29,7 +29,7 @@ DESCRIPTION
     returned by your app (mostly just the head block) to make it play nicer
     with iPhones.
 
-    This is a borderline ACME movile. For real <HTML5> mobile web apps you
+    This is a borderline ACME module. For real <HTML5> mobile web apps you
     should be writing the HTML yourself.
 
 ATTRIBUTES
