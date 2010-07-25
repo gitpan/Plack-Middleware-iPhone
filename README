@@ -2,7 +2,7 @@ NAME
     Plack::Middleware::iPhone - Make your html more iPhone friendly
 
 VERSION
-    version 1.101110
+    version 1.102060
 
 SYNOPSIS
       # iPhone compatible directory listing..
@@ -78,7 +78,7 @@ SEE ALSO
     (freely available).
 
 AUTHOR
-      Patrick Donelan <pat@patspam.com>
+    Patrick Donelan <pat@patspam.com>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2010 by Patrick Donelan.

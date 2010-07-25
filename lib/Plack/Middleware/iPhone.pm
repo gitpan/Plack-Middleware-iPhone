@@ -8,7 +8,7 @@
 # 
 package Plack::Middleware::iPhone;
 BEGIN {
-  $Plack::Middleware::iPhone::VERSION = '1.101110';
+  $Plack::Middleware::iPhone::VERSION = '1.102060';
 }
 
 # ABSTRACT: Make your html more iPhone friendly
@@ -152,7 +152,7 @@ Plack::Middleware::iPhone - Make your html more iPhone friendly
 
 =head1 VERSION
 
-version 1.101110
+version 1.102060
 
 =head1 SYNOPSIS
 
@@ -244,7 +244,7 @@ L<Building iPhone Apps with HTML, CSS, and JavaScript|http://building-iphone-app
 
 =head1 AUTHOR
 
-  Patrick Donelan <pat@patspam.com>
+Patrick Donelan <pat@patspam.com>
 
 =head1 COPYRIGHT AND LICENSE
 

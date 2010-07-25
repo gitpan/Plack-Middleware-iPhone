@@ -3,39 +3,53 @@
    "author" : [
       "Patrick Donelan <pat@patspam.com>"
    ],
-   "build_requires" : {
-      "File::Find" : "0",
-      "File::Temp" : "0",
-      "HTTP::Request::Common" : "0",
-      "Module::Build" : "0.3601",
-      "Plack::Builder" : "0",
-      "Plack::Test" : "0",
-      "Test::More" : "0"
-   },
-   "configure_requires" : {
-      "ExtUtils::MakeMaker" : "6.31",
-      "Module::Build" : "0.3601"
-   },
-   "generated_by" : "Dist::Zilla version 2.101040",
-   "license" : "perl",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
+   "license" : [
+      "perl_5"
+   ],
    "meta-spec" : {
-      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html",
-      "version" : 1.4
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
    },
    "name" : "Plack-Middleware-iPhone",
-   "recommends" : {},
-   "requires" : {
-      "Digest::MD5" : "0",
-      "File::Slurp" : "0",
-      "HTML::DOM" : "0",
-      "Plack::Middleware" : "0",
-      "Plack::Util::Accessor" : "0",
-      "UNIVERSAL::require" : "0",
-      "parent" : "0"
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31",
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Digest::MD5" : 0,
+            "File::Slurp" : 0,
+            "HTML::DOM" : 0,
+            "Plack::Middleware" : 0,
+            "Plack::Util::Accessor" : 0,
+            "UNIVERSAL::require" : 0,
+            "parent" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "HTML::Tidy" : 0,
+            "HTTP::Request::Common" : 0,
+            "Plack::Builder" : 0,
+            "Plack::Test" : 0,
+            "Test::More" : 0
+         }
+      }
    },
-   "resources" : {
-      "repository" : "http://github.com/pdonelan/Plack-Middleware-iPhone"
-   },
-   "version" : "1.101110"
+   "release_status" : "stable",
+   "resources" : {},
+   "version" : "1.102060"
 }
 

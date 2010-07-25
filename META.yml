@@ -5,6 +5,7 @@ author:
 build_requires:
   File::Find: 0
   File::Temp: 0
+  HTML::Tidy: 0
   HTTP::Request::Common: 0
   Module::Build: 0.3601
   Plack::Builder: 0
@@ -13,13 +14,13 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.31
   Module::Build: 0.3601
-generated_by: 'Dist::Zilla version 2.101040'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Plack-Middleware-iPhone
-recommends: {}
 requires:
   Digest::MD5: 0
   File::Slurp: 0
@@ -28,6 +29,5 @@ requires:
   Plack::Util::Accessor: 0
   UNIVERSAL::require: 0
   parent: 0
-resources:
-  repository: http://github.com/pdonelan/Plack-Middleware-iPhone
-version: 1.101110
+resources: {}
+version: 1.102060
